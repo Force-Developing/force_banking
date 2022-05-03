@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>force_uttag</title>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="./css/app.css" rel="stylesheet" />  
+    </head>  
+    <body>
+
+        <!-- BANKS -->
+
+        <div class="swedbankContainer">
+            <div class="swedbankLogo" onclick="GoBackToMain()">
+            </div>
+            <div class="hotbar">
+                <div class="home" onclick="GoBackToMain()">
+                </div>
+                <div class="salaryAccount" onclick="OpenSalaryMenu()">Lönekonto
+                </div>
+                <div class="bankAccount" onclick="OpenBankMenu()">Bankkonto
+                </div>
+            </div>
+
+            <div class="news1">
+                <h1>Börja månadsspara</h1>
+                <p>Det bästa sparandet är det som blir av.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="swedbankLogo" onclick="GoBackToMain()">
+            </div>
+            <div class="hotbar">
+                <div class="home" onclick="GoBackToMain()">
+                </div>
+                <div class="salaryAccount" onclick="OpenSalaryMenu()">Lönekonto
+                </div>
+                <div class="bankAccount" onclick="OpenBankMenu()">Bankkonto
+                </div>
+            </div>
+
+            <div class="welcomeMessage">
+            </div>
+            <div class="accountInfo">
+            </div>
+            <input placeholder="Summa" id="amount">
+            <button onclick="TakeOutMoney()" class="waves-effect waves-light">Ta ut</button>
+        </div>
+
+        <div class="bankContainer">
+            <div class="swedbankLogo" onclick="GoBackToMain()">
+            </div>
+            <div class="hotbar">
+                <div class="home" onclick="GoBackToMain()">
+                </div>
+                <div class="salaryAccount" onclick="OpenSalaryMenu()">Lönekonto
+                </div>
+                <div class="bankAccount" onclick="OpenBankMenu()">Bankkonto
+                </div>
+            </div>
+
+            <div class="welcomeMessage">
+            </div>
+            <div class="accountInfo">
+            </div>
+            <input placeholder="Summa" id="amount2">
+            <button onclick="DepositMoney()" class="waves-effect waves-light">Sätt in</button>
+            <button onclick="WithdrawMoney()" class="waves-effect waves-light">Ta ut</button>
+
+            <div class="creditCode">
+            </div>
+            <button onclick="GiveBankCard()" id="bankcardBtn" class="waves-effect waves-light">Ta ut bankkort</button>
+        </div>
+
+        <!-- ATMS -->
+
+        <div class="AtmContainer">
+            <div class="keypadCon">
+                <div class="swedbankLogo">
+                </div>
+                <div class="keypad"><p>Skriv in pinkod</p></div>
+            </div>
+        </div>
+
+        <div class="AtmBank">
+            <div class="swedbankLogo"  onclick="GoBackToMainAtm()">
+            </div>
+            <div class="pCon">
+                <p>Saldo</p>
+                <div class="moneyCon">
+
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="atmDeposit">
+                    <div class="input-field">
+                        <input id="atmDeposit" placeholder="Sätt in, SEK">
+                    </div>
+                    <button class="waves-effect waves-orange" id="atmDepositBtn" onclick="atmDeposit()">Sätt in</button>
+                </div>
+                <div class="atmWithdraw">
+                    <div class="input-field">
+                        <input id="atmWithdraw" placeholder="Ta ut, SEK">
+                    </div>
+                    <button class="waves-effect waves-orange" id="atmWithdrawBtn" onclick="atmWithdraw()">Ta ut</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>

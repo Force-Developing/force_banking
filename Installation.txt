@@ -1,0 +1,3 @@
+Du kör igenom SQL:en sedan lägger du in de som står i es_extended,server,paycheck.lua i es_extended/server/paycheck.lua.
+
+Läs inventory,client,functions.lua också
